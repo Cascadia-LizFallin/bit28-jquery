@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Getting Started with jQuery UI</title>
+    <script src="jquery-1.11.1.js"></script>
+    <script src="jquery-ui.js"></script>
+    
+    <script>
+        var cities = ["Mumbai", "Bengaluru", "New York", "Rome", "Seattle", "Adelaide", "Baltimore", "Algiers", "Baghdad", 
+        			  "Atlanta", "Athens", "Bangalore", "Austin", "Beijing", "Auburn", "Cairo", "Aberdeen", "Calcutta", "Bothell",
+                      "Calgary", "Sydney", "Helsinki", "Tokyo", "London", "Barcelona", "Bellingham", "Copenhagen", "Bellevue", "Centralia", 
+                      "Detroit", "Ekaterinburg", "Edmonton", "Duvall", "Chehalis", "Denver", "Edmonds", "Dayton", "Concrete", "Everett",
+                      "Paris", "Dubai", "Singapore", "Perth", "New Zealand", "Belgrade", "Delhi", "Ferndale", "Gig Harbor", "Forks", 
+                      "Hoodsport", "Gold Bar", "Houston", "Istanbul", "Hong Kong", "Lake Stevens", "Indianapolis", "Joyce", "Kalama", "Lacey",
+                      "Bangkok", "Calgary", "Franfort", "Boston", "Fall City", "Issaquah", "Budapest", "Index", "Mountlake Terrace", 
+                      "Marysville", "Naches", "Kiev", "Oak Harbor", "Omak", "Vashon", "Mukilteo", "Ocean Shores", "Minsk", "Rio de Janeiro", 
+                      "Prague", "Redmond", "Fall City", "Sammamish", "Tecoma", "Union", "Xian", "Walla Walla", "San Diego", "Taipei", "Tokyo",
+                      "Nooksack", "Olympia", "Portland", "Richland", "Shelton", "Tumwater", "Vienna", "Twisp", "Seoul", "Ulsan", "Warsaw",
+                      "Amersterdam", "Dublin", "Cleveland", "Federal Way", "Kent", "Lynnwood", "Bucharest", "Las Vegas", "Yiyang", "Lisbon", 
+                      "Madrid", "Los Angeles", "Orlando", "Satsop", "Tenino", "Vancouver", "Montreal", "Wenatchee", "Zigong", "New Orleans", 
+                      "Yakima", "Rotterdam", "Woodway", "Yelm", "Rome", "Winthrop", "Tehran", "Sydney", "Zibo", 
+                      "Naples", "Phoenix", "Shoreline", "Alderwood Manor", "Brier", "Snohomish", "Westport", 
+                      "Moscow", "Woodinville", "Winkusville", "Yacolt", "Ufa", "Wapato", "Seattle", "Zillah", "Philadelphia", 
+                      "New York", "Melbourne", "Spanaway", "Ottawa", "Memphis", "Sultan", "Toledo", ];
+
+        $(function () {
+            $("#cities").autocomplete({
+                source: cities
+            });
+/*   
+			// Overrides the default autocomplete filter function to search only from the beginning of the string
+    		$.ui.autocomplete.filter = function (array, term) {
+        	var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+        	return $.grep(array, function (value) {
+            return matcher.test(value.label || value.value || value);
+        		});
+    		}; 
+*/
+        });
+    </script>
+    
+</head>
+<body>
+    <h1>Getting Started with jQuery UI</h1>
+    <h2>Type any letter in the textbox to search for a city</h2>
+    <p>jQuery UI Autocomplete will find a letter no matter where it exists in a word.<br/>To search only from the
+    	 beginning of a word requires a bit of additional coding (see comment block in source code).</p>
+    <div>
+        <label for="cities">Cities Name: </label>
+        <input id="cities">
+    </div>
+</body>
+</html>

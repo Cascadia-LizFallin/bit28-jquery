@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 10 Demo 01: jQuery Basics</title>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+     $("document").ready(function () {
+         $("p").css("background-color", "#FFCC66");
+		 $("p").css("font-family", "verdana");
+		 $("p").css("border", "solid medium red");
+		 $("p").css("padding", "10px");
+		 $("p").css("margin-right", "50%");
+         $("p").click(function () {
+			 $(this).css("color", "blue");
+             $(this).text("Gadzooks! I've been clicked!");
+         });
+     });
+</script>
+<style>
+	body {background-color:#722628;}
+</style>
+</head>
+<body>
+	<p>This is a paragraph!</p>
+	<p>And this is a second paragraph!</p>
+	<p>And this is a third paragraph!</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Rex Winkus">
+<title>jQuery04 Example File</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+	$(document).ready(function() {
+       $('#hideLink').click(function(){
+		 $('#someText').hide(1000); // slide hide, in milliseconds; 1000 = 1 second
+	   });
+       $('#showLink').click(function(){
+		 $('#someText').show(1000); // slide show, in milliseconds; 1000 = 1 second
+	   });
+    });
+</script>
+
+</head>
+
+<body>
+
+<h2>jQuery 04 Example File</h2> 
+
+<p id="someText">Some Fascinating Text!</p>
+
+<a href="#" id="showLink">Show</a> | <a href="#" id="hideLink">Hide</a>
+
+</body>
+</html>
+

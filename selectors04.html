@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Rex Winkus">
+<title>Selectors 04 Example File</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+	$(document).ready(function() {
+       $('li').filter(':first').css({'color':'#FF0000'});
+	   $('li:not(#third)').css({'border':'1px solid #0000FF'});  
+	   $('li:contains("Third")').addClass('highlight'); 
+    });
+</script>
+
+<style>
+.highlight {
+    background-color: #FFFF00;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Selectors 04 Example File</h2>
+
+<ul>
+    <li id="first">First Item</li>
+    <li id="second">Second Item</li>
+    <li id="third">Third Item</li>
+    <li id="fourth">Fourth Item</li>
+</ul>
+
+</body>
+</html>
+

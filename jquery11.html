@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Rex Winkus">
+<title>jQuery11 Example File</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+$(document).ready(function(){
+  $('p').click(function(){ //Here we are hiding the <p> tags just by click on them! No <a> tag necessary.
+    $(this).hide();
+  });
+});
+</script>
+
+</head>
+<body>
+
+<h2>jQuery 11 Example File</h2>
+
+<p>If you click on me, I will disappear -- voila! -- just like magic!</p>
+<p>Click me too -- Poof! -- gone with the wind!</p>
+<p>Hey! Don't forget me! Poof-poof!</p>
+
+</body>
+</html>

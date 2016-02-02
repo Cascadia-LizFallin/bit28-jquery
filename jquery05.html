@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Rex Winkus">
+<title>jQuery05 Example File</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+	$(document).ready(function() {
+       $('a').click(function(){
+		 $('p').slideToggle(); // slideToggle default is 1000 milliseconds; you can add a larger number to slow the toggle
+	   });
+    });
+</script>
+
+</head>
+
+<body>
+
+<h2>jQuery 05 Example File</h2> 
+
+<p>Some Fascinating Text!</p> <!-- Notice no ID, as we're selecting by the <p> tag in the show and hide functions -->
+
+<a href="#">Toggle</a> <!-- Notice no ID, as we're selecting by the <a> tag in the show and hide functions -->
+<!--
+<br>
+<a href="#">Toggle</a>
+<br>
+<a href="#">Toggle</a>
+-->
+</body>
+</html>
+

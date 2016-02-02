@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Rex Winkus">
+<title>jQuery10 Example File</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<script>
+	$(document).ready(function() {
+       $('a').click(function(){
+		 $('p').not('.important').slideToggle(); // using class 'important' NOT filter; 'important' is EXCLUDED from the slideToggle
+	   });
+    });
+</script>
+
+</head>
+
+<body>
+
+<h2>jQuery 10 Example File</h2> 
+
+<p>1. Some Fascinating Text!</p> 
+<p>2. Some More Fascinating Text!</p> 
+<p class="important">3. Even Some More Fascinating Text!</p> 
+<p>4. And the Last Bit of Fascinating Text!</p> 
+
+<a href="#">Toggle</a> <!-- Notice no ID, as we're selecting by the <a> tag in the show and hide functions -->
+<!--
+<br>
+<a href="#">Toggle</a>
+<br>
+<a href="#">Toggle</a>
+-->
+</body>
+</html>
+
